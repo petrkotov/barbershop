@@ -1,1 +1,1 @@
-# barbershop
+# https://petrkotov.github.io/barbershop/
