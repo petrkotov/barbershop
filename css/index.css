@@ -323,6 +323,10 @@ body {
   margin-bottom: 15px;
 }
 
+.footer-contacts a{
+  color: #ffffff;
+}
+
 .footer-copyright {
   float: right;
   max-width: 180px;
