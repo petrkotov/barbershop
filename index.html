@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
       <title>Барбершоп «Бородинский»</title>
-      <link rel="stylesheet" type="text/css" href="css/index.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
       <link rel="stylesheet" type="text/css" href="css/normalize.css">
       <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
@@ -14,13 +14,13 @@
         <nav class="main-navigation">
           <ul>
             <li>
-              <a href="#">Информация</a>
+              <a class="active">Информация</a>
             </li>
             <li>
               <a href="#">Новости</a>
             </li>
             <li>
-              <a href="#">Прайс-лист</a>
+              <a href="prices.html">Прайс-лист</a>
             </li>
             <li>
               <a href="#">Магазин</a>
@@ -81,6 +81,7 @@
 
         </div>
       </div>
+
       <div class="index-content clearfix">
         <div class="index-content-left">
           <h2 class="index-content-title">Контактная информация</h2>
@@ -94,20 +95,22 @@
             пн - пт: c 10:00 до 22:00<br>
             сб - вс: с 10:00 до 19:00
           </p>
-          <button class="btn" href="#">Как проехать</button>
+          <button class="btn js-open-map" href="#">Как проехать</button>
           <button class="btn" href="#">Обратная связь</button>
           </div>
         <div class="index-content-right">
           <h2 class="index-content-title">Записаться</h2>
-          <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-          <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-            <input type="text" name="date" value="" placeholder="Дата">
-            <input type="text" name="time" value="" placeholder="Время">
-            <input type="text" name="name" value="" placeholder="Ваше имя">
-            <input type="text" name="phone" value="" placeholder="Телефон">
-            <button class="btn" type="submit">Отправить</button>
-          </form>
-          </main>
+            <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+            <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+              <input type="text" name="date" value="" placeholder="Дата">
+              <input type="text" name="time" value="" placeholder="Время">
+              <input type="text" name="name" value="" placeholder="Ваше имя">
+              <input type="text" name="phone" value="" placeholder="Телефон">
+              <button class="btn" type="submit">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </main>
           <footer class="main-footer">
             <div class="container clearfix">
               <section class="footer-contacts">
@@ -127,8 +130,30 @@
                 <a class="btn" href="#">HTML Academy</a>
               </section>
             </div>
-          </div>
           </footer>
+          <div class="modal-content">
+            <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+            <h2 class="modal-content-title">Личный кабинет</h2>
+            <p>Введите свой логин и пароль.</p>
+            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+              <input class="icon-user" type="text" name="login" placeholder="Логин" required>
+              <input class="icon-password" type="password" name="password" placeholder="Пароль" required>
+              <label class="login-checkbox">
+                <input type="checkbox" name="remember">
+                <span class="checkbox-indicator"></span>
+                Запомните меня
+              </label>
+              <a class="restore" href="#">Я забыл пароль</a>
+              <button class="btn" type="submit">Войти</button>
+            </form>
         </div>
-  </body>
+        <div class="modal-content-map">
+          <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1506499390594"
+           width="766" height="561" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="modal-overlay"></div>
+        <script src="js/popup.js"></script>
+        <script src="js/map.js"></script>
+    </body>
 </html>
