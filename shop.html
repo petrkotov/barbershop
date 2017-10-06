@@ -35,7 +35,6 @@
         <div class="user-block">
           <a class="login" href=#>Вход</a>
         </div>
-
       </div>
     </header>
     <main class="container">
@@ -54,39 +53,28 @@
         </ul>
       </div>
         <div class="inner-content clearfix">
-
           <form class="search-filter" method="post" action="https://echo.htmlacademy.ru">
             <fieldset>
             <legend>
               <h2>Производители:</h2>
             </legend>
-
-            <!--<label class="login-checkbox">
-              <input type="checkbox" name="remember">
-              <span class="checkbox-indicator"></span>
-              Запомните меня
-            </label> -->
-
-
-              <label class="login-checkbox"><input type="checkbox" name="baxter of california" checked><span class="checkbox-indicator"></span>Baxter of california<br></label>
-              <label><input type="checkbox" name="mr natty">Mr natty<br></label>
-              <label><input type="checkbox" name="suavecito" checked>Suavecito<br></label>
-              <label><input type="checkbox" name="malin+goetz">Malin+goetz<br></label>
-              <label><input type="checkbox" name="murray's">Murray's<br></label>
-              <label><input type="checkbox" name="american crew" checked>American crew<br></label>
-
-
-
-            <legend>
+            <div class="checkboxes">
+              <div class="checkbox-list"><label class="checkbox"><input type="checkbox" name="baxter of california" checked><span class="checkbox-filter"></span>Baxter of california<br></label></div>
+              <div class="checkbox-list"><label class="checkbox"><input type="checkbox" name="mr natty"><span class="checkbox-filter"></span>Mr natty<br></label></div>
+              <div class="checkbox-list"><label class="checkbox"><input type="checkbox" name="suavecito" checked><span class="checkbox-filter"></span>Suavecito<br></label></div>
+              <div class="checkbox-list"><label class="checkbox"><input type="checkbox" name="malin+goetz"><span class="checkbox-filter"></span>Malin+goetz<br></label></div>
+              <div class="checkbox-list"><label class="checkbox"><input type="checkbox" name="murray's"><span class="checkbox-filter"></span>Murray's<br></label></div>
+              <div class="checkbox-list"><label class="checkbox"><input type="checkbox" name="american crew" checked><span class="checkbox-filter"></span>American crew<br></label></div>
+            </div>
+            <legend class="product-group">
               <h2>Группы товаров:</h2>
             </legend>
-
-              <label><input type="radio" name="product group" value="shaving accessories">Бритвенные принадлежности<br></label>
-              <label><input type="radio" name="product group" value="care products" checked>Средства для уходаи<br></label>
-              <label><input type="radio" name="product group" value="accessories">Аксессуары<br></label>
+            <div class="radiobuttons">
+              <div class="checkbox-list"><label class="radio"><input type="radio" name="product group" value="shaving accessories"><span class="radio-filter"></span>Бритвенные <span class="transfer">принадлежности</span><br></label></div>
+              <div class="checkbox-list"><label class="radio"><input type="radio" name="product group" value="care products" checked><span class="radio-filter"></span>Средства для уходаи<br></label></div>
+              <div class="checkbox-list"><label class="radio"><input type="radio" name="product group" value="accessories"><span class="radio-filter"></span>Аксессуары<br></label></div>
               <input type="submit" value="Показать" class="search-filter-button">
-
-
+            </div>
             </fieldset>
           </form>
           <div class="product-windows">
@@ -109,13 +97,16 @@
               </div>
             </div>
               <div class="product-window">
-                <img src="pics/item-set.jpg" width="220" height="165" alt="Набор для путешествий «Baxter of California»">
-                <h4>Набор для путешествий</h4>
-                <p>«Baxter of California»</p>
-                <div class="catalog-price">
-                  <div class="item-price">2 900 руб.</div>
-                  <a href="#" class="buy-button">КУПИТЬ</a>
-                </div>
+                <a href="item.html">
+                  <img src="pics/item-set.jpg" width="220" height="165" alt="Набор для путешествий «Baxter of California»">
+                  <h4>Набор для путешествий</h4>
+                  <p>«Baxter of California»</p>
+                  </a>
+                  <div class="catalog-price">
+                    <div class="item-price">2 900 руб.</div>
+                    <a href="#" class="buy-button">КУПИТЬ</a>
+                  </div>
+                </a>
               </div>
               <div class="product-window">
                 <img src="pics/item-shaving-set.jpg" width="220" height="165" alt="Набор для бритья «Baxter of California»">
@@ -151,10 +142,6 @@
               <a class="page" href="#">3</a>
               <a class="page" href="#">4</a>
             </div>
-
-
-
-
         </div>
       </main>
     <footer class="main-footer">
