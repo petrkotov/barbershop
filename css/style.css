@@ -323,6 +323,7 @@ body {
 /* Стиль внутренних страниц*/
 
 .inner-content {
+  position: relative;
   margin-bottom: 75px;
 }
 
@@ -820,7 +821,7 @@ body {
   left: 560px;
   width: 109px;
   height: 34px;
-  background-color: #ccc;
+  background-color: #e5e5e5;
   text-align: center;
   padding-top: 10px;
 }
@@ -899,7 +900,7 @@ body {
 
 .item-preview-right-click {
   background-size: contain;
-  
+
   position: relative;
   background-image: url("../pics/item-preview-right.jpg");
 }
@@ -979,4 +980,183 @@ body {
   position: absolute;
   top: 50px;
   right: 292px;
+}
+
+/* Каталог */
+
+.search-filter {
+  position: absolute;
+  top: 0;
+  display: inline-block;
+  width: 200px;
+  margin: 0;
+}
+
+.product-windows {
+    float: right;
+  display: inline-block;
+  margin: 0;
+  width: 800px;
+  height: 700px;
+  margin-bottom: 10px;
+}
+
+
+
+.product-window {
+  position: relative;
+  text-align: left;
+  margin: 10px;
+  display: inline-block;
+  width: 220px;
+  height: 280px;
+  float: right;
+  top: 50px;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
+}
+
+.product-window:hover {
+  box-shadow: 0 0 25px 0 rgba(0, 1, 1, 0.4);
+}
+
+
+.product-window h4,
+.product-window p {
+  padding-left: 15px;
+  margin: 0;
+  line-height: 18px;
+
+}
+
+.product-window h4 {
+  text-transform: none;
+}
+
+
+.catalog-price {
+  position: absolute;
+  right: 763px;
+  bottom: 370px;
+}
+
+.pages {
+  position: relative;
+}
+
+.page {
+  position: absolute;
+  top: 690px;
+  display: inline-block;
+  width: 45px;
+  height: 36px;
+  padding-top: 10px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.page:hover {
+  background-color: #663d15;
+}
+
+.active-page {
+
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.active-page:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.page:nth-child(1) {
+  left: 230px;
+}
+
+.page:nth-child(2) {
+  left: 285px;
+}
+
+.page:nth-child(3) {
+  left: 340px;
+}
+
+.page:nth-child(4) {
+  left: 395px;
+}
+
+fieldset {
+  border: none;
+}
+
+.search-filter-button {
+  font-family: 'PT Sans Narrow', "Arial", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  width: 100px;
+  height: 40px;
+  margin-top: 30px;
+  background-color: #000000;
+  border: none;
+  color: #ffffff;
+}
+
+.search-filter-button:hover {
+  background-color: #663d15;
+}
+
+
+
+
+
+
+
+
+.login-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.login-checkbox {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.login-checkbox:hover {
+  color: #663d15;
+}
+
+.login-checkbox input[type="checkbox"] + .checkbox-indicator {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    border: 2px solid #000000;
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 1px;
+  width: 15px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
+  transform: rotate(45deg);
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+  transform: rotate(-45deg);
+}
+
+.checkbox-indicator {
+  margin-top: 2px;
 }
